@@ -2,6 +2,7 @@ node {
   stage('SCM') {
     checkout scm
   }
+  sonar.analysis.mode=publish
   stage('SonarQube Analysis') {
     def scannerHome = tool 'SonarScanner'
     withSonarQubeEnv() {
