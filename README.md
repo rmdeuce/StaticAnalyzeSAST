@@ -32,22 +32,6 @@ Start application server with watcher for auto-reload on change:
 dotnet watch run
 ```
 
-## Build Docker
 
-* To build a docker image run the following command
-
-```bash
-docker build -t appsecco/dvcsharp .
-```
-
-* To run the docker container
-
-```bash
-docker run -d --name dvcsharp -it -p 5000:5000 appsecco/dvcsharp
-```
-
-## Solution
-
-TBD
 
 
